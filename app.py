@@ -2,11 +2,11 @@ from flask import Flask, request, jsonify, render_template
 from google import genai
 import os
 
-# 代理配置（可选）
-proxy = os.environ.get("HTTP_PROXY")
-if proxy:
-    os.environ["http_proxy"] = proxy
-    os.environ["https_proxy"] = proxy
+# # 代理配置（可选）
+# proxy = os.environ.get("HTTP_PROXY")
+# if proxy:
+#     os.environ["http_proxy"] = proxy
+#     os.environ["https_proxy"] = proxy
 
 # 使用环境变量读取API Key
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
